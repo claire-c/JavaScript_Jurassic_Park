@@ -52,8 +52,12 @@ describe('Park', function() {
       assert.strictEqual(actual, 2);
     });
 
-    xit('should be able to remove all dinosaurs of a particular species', function () {
-
+    it('should be able to remove all dinosaurs of a particular species', function () {
+      let tyrannosaur = new Dinosaur('t-rex', 'carnivore', 50);
+      park.addDinosaur(tyrannosaur);
+      park.removeSpecificDinosaur('t-rex');
+      const actual = park.dinosaurs.length;
+      assert.strictEqual(actual, 1);
     });
 
     xit('should be able to find the dinosaur that attracts the most visitors', function () {
