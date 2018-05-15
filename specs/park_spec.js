@@ -65,4 +65,9 @@ describe('Park', function() {
       assert.deepStrictEqual(actual, velociraptor);
     });
 
+    it('should be able to get total daily visitors', function(){
+      const actual = park.dailyVisitors();
+      assert.strictEqual(actual, 150);
+    });
+
 });
