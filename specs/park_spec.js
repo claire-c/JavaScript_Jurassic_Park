@@ -70,4 +70,9 @@ describe('Park', function() {
       assert.strictEqual(actual, 150);
     });
 
+    it('should be able to get total annual visitors', function(){
+      const actual = park.annualVisitors();
+      assert.strictEqual(actual, 54750);
+    });
+
 });
