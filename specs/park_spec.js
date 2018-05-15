@@ -39,7 +39,13 @@ describe('Park', function() {
       assert.strictEqual(actual, 3);
     });
 
-    xit('should be able to remove a dinosaur from its collection', function () {
+    it('should be able to remove any dinosaur from its collection', function () {
+      park.removeDinosaur();
+      const actual = park.dinosaurs.length;
+      assert.strictEqual(actual, 1);
+    });
+
+    xit('should be able to remove any named dinosaur from its collection', function (){
 
     });
 
