@@ -60,8 +60,9 @@ describe('Park', function() {
       assert.strictEqual(actual, 1);
     });
 
-    xit('should be able to find the dinosaur that attracts the most visitors', function () {
-
+    it('should be able to find the dinosaur that attracts the most visitors', function () {
+      const actual = park.mostPopularDinosaur();
+      assert.deepStrictEqual(actual, velociraptor);
     });
 
 });
